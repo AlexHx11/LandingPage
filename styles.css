@@ -49,6 +49,8 @@ body {
     object-fit: cover;
     border: 14px solid #ece6c8;
     border-radius: 10px 0 10px 0;
+    box-shadow: 5px 5px 15px #252a25;
+
 
 }
 
@@ -96,8 +98,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, 150px);
     grid-auto-rows: auto;
-    gap: 1em;
-    justify-content: space-evenly;
+    gap: 6em;
+    justify-content: center;
     text-align: center;
 }
 
@@ -112,11 +114,12 @@ body {
     color: #4b7644;
 }
 
-.info-container .img {
+.info-container img {
     height: 150px;
     width: 150px;
-    background-color: #ffd000;
     border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 5px 5px 15px #888888;
 }
 
 /* ---------------------------------------- */
@@ -129,8 +132,12 @@ body {
 }
 .content.quote .author {
     align-self: end;
+    font-size: 28px;
+    padding-right: 1em;
 }
-
+.content.quote em {
+    font-weight: 200;
+}
 /* ----------------------------------------- */
 .content.action {
     background-color: #fffcec;
